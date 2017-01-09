@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MainOperator-Image/green.jpg</file>
+        <file>MainOperator-Image/gyration.jpg</file>
+        <file>MainOperator-Image/new.png</file>
+        <file>MainOperator-Image/red.jpg</file>
+        <file>MainOperator-Image/left.png</file>
+        <file>MainOperator-Image/right.png</file>
+        <file>MainOperator-Image/downArm.ico</file>
+        <file>MainOperator-Image/log.ico</file>
+        <file>MainOperator-Image/network.ico</file>
+        <file>MainOperator-Image/serialCom.ico</file>
+        <file>MainOperator-Image/servo.ico</file>
+        <file>MainOperator-Image/exit.ico</file>
+        <file>MainOperator-Image/robot.ico</file>
+        <file>MainOperator-Image/downward.png</file>
+        <file>MainOperator-Image/leftward.png</file>
+        <file>MainOperator-Image/rightward.png</file>
+        <file>MainOperator-Image/upward.png</file>
+        <file>MainOperator-Image/down.png</file>
+        <file>MainOperator-Image/up.png</file>
+        <file>MainOperator-Image/setting.png</file>
+    </qresource>
+</RCC>

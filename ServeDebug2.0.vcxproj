@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B97EAB5F-3292-3B05-B01A-AB6990EE4425}</ProjectGuid>
+    <RootNamespace>ServeDebug2.0</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>ServeDebug2.0</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>ServeDebug2.0</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ServeDebug2.0</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ServeDebug2.0</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtWidgets;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtGui;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtANGLE;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtNetwork;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtCore;release;.;C:\Qt\Qt5.6.0\5.6\msvc2015_64\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\qtmain.lib;shell32.lib;C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\Qt5Gui.lib;C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\Qt5Network.lib;C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib;C:\utils\postgresql\pgsql\lib;C:\utils\my_sql\my_sql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\ServeDebug2.0.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtWidgets;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtGui;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtANGLE;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtNetwork;C:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtCore;debug;.;C:\Qt\Qt5.6.0\5.6\msvc2015_64\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\qtmaind.lib;shell32.lib;C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\Qt5Guid.lib;C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\Qt5Networkd.lib;C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.6.0\5.6\msvc2015_64\lib;C:\utils\postgresql\pgsql\lib;C:\utils\my_sql\my_sql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\ServeDebug2.0.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\downserve\armmanage.cpp" />
+    <ClCompile Include="source\servodebug\Graph\boundcursoritem.cpp" />
+    <ClCompile Include="source\servodebug\Graph\bubbleitem.cpp" />
+    <ClCompile Include="source\insanalysis\commandanalysis.cpp" />
+    <ClCompile Include="source\servodebug\Graph\graphitem.cpp" />
+    <ClCompile Include="source\servodebug\Graph\graphscene.cpp" />
+    <ClCompile Include="source\keyframewidget\keyframewidget.cpp" />
+    <ClCompile Include="source\servodebug\Graph\keypointitem.cpp" />
+    <ClCompile Include="source\logdebug\logdebug.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="source\servodebug\SplineSample\myspline.cpp" />
+    <ClCompile Include="source\communicate\network\networkdialog.cpp" />
+    <ClCompile Include="source\communicate\serialcom\qextserialbase.cpp" />
+    <ClCompile Include="source\communicate\serialcom\qextserialport.cpp" />
+    <ClCompile Include="source\communicate\receivedata\receivedata.cpp" />
+    <ClCompile Include="source\communicate\serialcom\serialdialog.cpp" />
+    <ClCompile Include="source\servodebug\serverdebug.cpp" />
+    <ClCompile Include="source\settings\settingdialog.cpp" />
+    <ClCompile Include="source\keyframewidget\spinboxdelegate.cpp" />
+    <ClCompile Include="source\servodebug\SplineSample\spline.cpp" />
+    <ClCompile Include="source\communicate\serialcom\win_qextserialport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="source\downserve\armmanage.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\downserve\armmanage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\downserve\armmanage.h -o release\moc_armmanage.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/downserve/armmanage.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_armmanage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\downserve\armmanage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\downserve\armmanage.h -o debug\moc_armmanage.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/downserve/armmanage.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_armmanage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="source\servodebug\Graph\boundcursoritem.h" />
+    <ClInclude Include="source\servodebug\Graph\bubbleitem.h" />
+    <CustomBuild Include="source\insanalysis\commandanalysis.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\insanalysis\commandanalysis.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\insanalysis\commandanalysis.h -o release\moc_commandanalysis.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/insanalysis/commandanalysis.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_commandanalysis.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\insanalysis\commandanalysis.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\insanalysis\commandanalysis.h -o debug\moc_commandanalysis.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/insanalysis/commandanalysis.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_commandanalysis.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="source\insanalysis\communicateDefine.h" />
+    <ClInclude Include="source\servodebug\Graph\graphitem.h" />
+    <CustomBuild Include="source\servodebug\Graph\graphscene.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\servodebug\Graph\graphscene.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\servodebug\Graph\graphscene.h -o release\moc_graphscene.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/servodebug/Graph/graphscene.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_graphscene.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\servodebug\Graph\graphscene.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\servodebug\Graph\graphscene.h -o debug\moc_graphscene.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/servodebug/Graph/graphscene.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_graphscene.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\keyframewidget\keyframewidget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\keyframewidget\keyframewidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\keyframewidget\keyframewidget.h -o release\moc_keyframewidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/keyframewidget/keyframewidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_keyframewidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\keyframewidget\keyframewidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\keyframewidget\keyframewidget.h -o debug\moc_keyframewidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/keyframewidget/keyframewidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_keyframewidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="source\servodebug\Graph\keypointitem.h" />
+    <CustomBuild Include="source\logdebug\logdebug.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\logdebug\logdebug.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\logdebug\logdebug.h -o release\moc_logdebug.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/logdebug/logdebug.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_logdebug.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\logdebug\logdebug.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\logdebug\logdebug.h -o debug\moc_logdebug.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/logdebug/logdebug.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_logdebug.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="source\globaldefine\mainStructure.h" />
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="source\servodebug\SplineSample\myspline.h" />
+    <CustomBuild Include="source\communicate\network\networkdialog.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\communicate\network\networkdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\network\networkdialog.h -o release\moc_networkdialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/communicate/network/networkdialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_networkdialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\communicate\network\networkdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\network\networkdialog.h -o debug\moc_networkdialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/communicate/network/networkdialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_networkdialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\communicate\serialcom\qextserialbase.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\communicate\serialcom\qextserialbase.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\serialcom\qextserialbase.h -o release\moc_qextserialbase.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/communicate/serialcom/qextserialbase.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_qextserialbase.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\communicate\serialcom\qextserialbase.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\serialcom\qextserialbase.h -o debug\moc_qextserialbase.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/communicate/serialcom/qextserialbase.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_qextserialbase.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\communicate\serialcom\qextserialport.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\communicate\serialcom\qextserialport.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\serialcom\qextserialport.h -o release\moc_qextserialport.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/communicate/serialcom/qextserialport.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_qextserialport.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\communicate\serialcom\qextserialport.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\serialcom\qextserialport.h -o debug\moc_qextserialport.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/communicate/serialcom/qextserialport.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_qextserialport.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\communicate\receivedata\receivedata.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\communicate\receivedata\receivedata.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\receivedata\receivedata.h -o release\moc_receivedata.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/communicate/receivedata/receivedata.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_receivedata.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\communicate\receivedata\receivedata.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\receivedata\receivedata.h -o debug\moc_receivedata.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/communicate/receivedata/receivedata.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_receivedata.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\communicate\serialcom\serialdialog.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\communicate\serialcom\serialdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\serialcom\serialdialog.h -o release\moc_serialdialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/communicate/serialcom/serialdialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_serialdialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\communicate\serialcom\serialdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\serialcom\serialdialog.h -o debug\moc_serialdialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/communicate/serialcom/serialdialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_serialdialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\servodebug\serverdebug.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\servodebug\serverdebug.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\servodebug\serverdebug.h -o release\moc_serverdebug.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/servodebug/serverdebug.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_serverdebug.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\servodebug\serverdebug.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\servodebug\serverdebug.h -o debug\moc_serverdebug.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/servodebug/serverdebug.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_serverdebug.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\settings\settingdialog.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\settings\settingdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\settings\settingdialog.h -o release\moc_settingdialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/settings/settingdialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_settingdialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\settings\settingdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\settings\settingdialog.h -o debug\moc_settingdialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/settings/settingdialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_settingdialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\keyframewidget\spinboxdelegate.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\keyframewidget\spinboxdelegate.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\keyframewidget\spinboxdelegate.h -o release\moc_spinboxdelegate.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/keyframewidget/spinboxdelegate.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_spinboxdelegate.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\keyframewidget\spinboxdelegate.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\keyframewidget\spinboxdelegate.h -o debug\moc_spinboxdelegate.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/keyframewidget/spinboxdelegate.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_spinboxdelegate.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="source\servodebug\SplineSample\spline.h" />
+    <ClInclude Include="source\globaldefine\upDefine.h" />
+    <CustomBuild Include="source\communicate\serialcom\win_qextserialport.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\communicate\serialcom\win_qextserialport.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\serialcom\win_qextserialport.h -o release\moc_win_qextserialport.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC source/communicate/serialcom/win_qextserialport.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_win_qextserialport.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\communicate\serialcom\win_qextserialport.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/mkspecs/win32-msvc2015 -IC:/Users/Administrator/Documents/Qt/denceRobotDebug/ServeDebug2.0 -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2015_64/include/QtCore source\communicate\serialcom\win_qextserialport.h -o debug\moc_win_qextserialport.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC source/communicate/serialcom/win_qextserialport.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_win_qextserialport.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_armmanage.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_armmanage.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_commandanalysis.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_commandanalysis.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_graphscene.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_graphscene.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_keyframewidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_keyframewidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_logdebug.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_logdebug.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_networkdialog.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_networkdialog.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_qextserialbase.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_qextserialbase.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_qextserialport.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_qextserialport.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_receivedata.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_receivedata.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_serialdialog.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_serialdialog.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_serverdebug.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_serverdebug.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_settingdialog.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_settingdialog.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_spinboxdelegate.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_spinboxdelegate.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_win_qextserialport.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_win_qextserialport.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_MainWindowImage.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_MainWindowImage.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_documentImage.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_documentImage.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_analogdata.h" />
+    <ClInclude Include="ui_armmanage.h" />
+    <ClInclude Include="ui_keyframewidget.h" />
+    <ClInclude Include="ui_logdebug.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_networkdialog.h" />
+    <ClInclude Include="ui_serialdialog.h" />
+    <ClInclude Include="ui_serverdebug.h" />
+    <ClInclude Include="ui_settingdialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="source\servodebug\analogdata.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\servodebug\analogdata.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\servodebug\analogdata.ui -o ui_analogdata.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC source/servodebug/analogdata.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_analogdata.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\servodebug\analogdata.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\servodebug\analogdata.ui -o ui_analogdata.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC source/servodebug/analogdata.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_analogdata.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\downserve\armmanage.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\downserve\armmanage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\downserve\armmanage.ui -o ui_armmanage.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC source/downserve/armmanage.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_armmanage.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\downserve\armmanage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\downserve\armmanage.ui -o ui_armmanage.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC source/downserve/armmanage.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_armmanage.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\keyframewidget\keyframewidget.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\keyframewidget\keyframewidget.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\keyframewidget\keyframewidget.ui -o ui_keyframewidget.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC source/keyframewidget/keyframewidget.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_keyframewidget.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\keyframewidget\keyframewidget.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\keyframewidget\keyframewidget.ui -o ui_keyframewidget.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC source/keyframewidget/keyframewidget.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_keyframewidget.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\logdebug\logdebug.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\logdebug\logdebug.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\logdebug\logdebug.ui -o ui_logdebug.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC source/logdebug/logdebug.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_logdebug.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\logdebug\logdebug.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\logdebug\logdebug.ui -o ui_logdebug.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC source/logdebug/logdebug.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_logdebug.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\communicate\network\networkdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\communicate\network\networkdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\communicate\network\networkdialog.ui -o ui_networkdialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC source/communicate/network/networkdialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_networkdialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\communicate\network\networkdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\communicate\network\networkdialog.ui -o ui_networkdialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC source/communicate/network/networkdialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_networkdialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\communicate\serialcom\serialdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\communicate\serialcom\serialdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\communicate\serialcom\serialdialog.ui -o ui_serialdialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC source/communicate/serialcom/serialdialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_serialdialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\communicate\serialcom\serialdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\communicate\serialcom\serialdialog.ui -o ui_serialdialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC source/communicate/serialcom/serialdialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_serialdialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\servodebug\serverdebug.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\servodebug\serverdebug.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\servodebug\serverdebug.ui -o ui_serverdebug.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC source/servodebug/serverdebug.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_serverdebug.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\servodebug\serverdebug.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\servodebug\serverdebug.ui -o ui_serverdebug.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC source/servodebug/serverdebug.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_serverdebug.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\settings\settingdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">source\settings\settingdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\settings\settingdialog.ui -o ui_settingdialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC source/settings/settingdialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_settingdialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">source\settings\settingdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\uic.exe source\settings\settingdialog.ui -o ui_settingdialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC source/settings/settingdialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_settingdialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MainWindowImage.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MainWindowImage.qrc;MainOperator-Image\downArm.ico;MainOperator-Image\log.ico;MainOperator-Image\setting.png;MainOperator-Image\network.ico;MainOperator-Image\up.png;MainOperator-Image\servo.ico;MainOperator-Image\serialCom.ico;MainOperator-Image\green.jpg;MainOperator-Image\exit.ico;MainOperator-Image\upward.png;MainOperator-Image\rightward.png;MainOperator-Image\robot.ico;MainOperator-Image\right.png;MainOperator-Image\left.png;MainOperator-Image\new.png;MainOperator-Image\red.jpg;MainOperator-Image\down.png;MainOperator-Image\gyration.jpg;MainOperator-Image\downward.png;MainOperator-Image\leftward.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\rcc.exe -name MainWindowImage MainWindowImage.qrc -o release\qrc_MainWindowImage.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC MainWindowImage.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_MainWindowImage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MainWindowImage.qrc;MainOperator-Image\downArm.ico;MainOperator-Image\log.ico;MainOperator-Image\setting.png;MainOperator-Image\network.ico;MainOperator-Image\up.png;MainOperator-Image\servo.ico;MainOperator-Image\serialCom.ico;MainOperator-Image\green.jpg;MainOperator-Image\exit.ico;MainOperator-Image\upward.png;MainOperator-Image\rightward.png;MainOperator-Image\robot.ico;MainOperator-Image\right.png;MainOperator-Image\left.png;MainOperator-Image\new.png;MainOperator-Image\red.jpg;MainOperator-Image\down.png;MainOperator-Image\gyration.jpg;MainOperator-Image\downward.png;MainOperator-Image\leftward.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\rcc.exe -name MainWindowImage MainWindowImage.qrc -o debug\qrc_MainWindowImage.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC MainWindowImage.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_MainWindowImage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="MDI-Image\copy.png" />
+    <None Include="MDI-Image\cut.png" />
+    <CustomBuild Include="documentImage.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">documentImage.qrc;MDI-Image\save.png;MDI-Image\rightward.png;MDI-Image\open.png;MDI-Image\up.png;MDI-Image\down.png;MDI-Image\cut.png;MDI-Image\downward.png;MDI-Image\saveas.png;MDI-Image\copy.png;MDI-Image\upward.png;MDI-Image\right.png;MDI-Image\new.png;MDI-Image\paste.png;MDI-Image\left.png;MDI-Image\leftward.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\rcc.exe -name documentImage documentImage.qrc -o release\qrc_documentImage.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC documentImage.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_documentImage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">documentImage.qrc;MDI-Image\save.png;MDI-Image\rightward.png;MDI-Image\open.png;MDI-Image\up.png;MDI-Image\down.png;MDI-Image\cut.png;MDI-Image\downward.png;MDI-Image\saveas.png;MDI-Image\copy.png;MDI-Image\upward.png;MDI-Image\right.png;MDI-Image\new.png;MDI-Image\paste.png;MDI-Image\left.png;MDI-Image\leftward.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.6.0\5.6\msvc2015_64\bin\rcc.exe -name documentImage documentImage.qrc -o debug\qrc_documentImage.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC documentImage.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_documentImage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="MDI-Image\down.png" />
+    <None Include="MainOperator-Image\downArm.ico" />
+    <None Include="MDI-Image\downward.png" />
+    <None Include="MainOperator-Image\downward.png" />
+    <None Include="MainOperator-Image\exit.ico" />
+    <None Include="MainOperator-Image\green.jpg" />
+    <None Include="MainOperator-Image\gyration.jpg" />
+    <None Include="MDI-Image\left.png" />
+    <None Include="MainOperator-Image\left.png" />
+    <None Include="MDI-Image\leftward.png" />
+    <None Include="MainOperator-Image\leftward.png" />
+    <None Include="MainOperator-Image\log.ico" />
+    <None Include="MainOperator-Image\network.ico" />
+    <None Include="MDI-Image\new.png" />
+    <None Include="MainOperator-Image\new.png" />
+    <None Include="MDI-Image\open.png" />
+    <None Include="MDI-Image\paste.png" />
+    <None Include="MainOperator-Image\red.jpg" />
+    <None Include="MDI-Image\right.png" />
+    <None Include="MainOperator-Image\right.png" />
+    <None Include="MDI-Image\rightward.png" />
+    <None Include="MainOperator-Image\rightward.png" />
+    <None Include="MainOperator-Image\robot.ico" />
+    <None Include="MDI-Image\save.png" />
+    <None Include="MDI-Image\saveas.png" />
+    <None Include="MainOperator-Image\serialCom.ico" />
+    <None Include="MainOperator-Image\servo.ico" />
+    <None Include="MainOperator-Image\setting.png" />
+    <None Include="MDI-Image\up.png" />
+    <None Include="MainOperator-Image\up.png" />
+    <None Include="MDI-Image\upward.png" />
+    <None Include="MainOperator-Image\upward.png" />
+    <None Include="MainOperator-Image\down.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

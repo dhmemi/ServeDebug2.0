@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MDI-Image/copy.png</file>
+        <file>MDI-Image/cut.png</file>
+        <file>MDI-Image/new.png</file>
+        <file>MDI-Image/open.png</file>
+        <file>MDI-Image/paste.png</file>
+        <file>MDI-Image/save.png</file>
+        <file>MDI-Image/saveas.png</file>
+        <file>MDI-Image/downward.png</file>
+        <file>MDI-Image/left.png</file>
+        <file>MDI-Image/leftward.png</file>
+        <file>MDI-Image/right.png</file>
+        <file>MDI-Image/rightward.png</file>
+        <file>MDI-Image/up.png</file>
+        <file>MDI-Image/upward.png</file>
+        <file>MDI-Image/down.png</file>
+    </qresource>
+</RCC>
