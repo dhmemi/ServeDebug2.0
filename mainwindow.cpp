@@ -11,6 +11,7 @@
 #include "source/servodebug/Graph/graphscene.h"
 #include "source/settings/settingdialog.h"
 #include "source/globaldefine/upDefine.h"
+#include "source/about/about.h"
 
 #include <QToolBar>
 #include <QToolButton>
@@ -36,6 +37,7 @@ MainWindow::MainWindow(QWidget *parent) :
     zhKeyFrameWidget = NULL;
     zhArmManage = NULL;
     zhSetting = NULL;
+    zhabout = NULL;
 
     QWidget* p = takeCentralWidget();
     if(p){
@@ -233,7 +235,7 @@ void MainWindow::settingButtonSlot()
 
 void MainWindow::aboutButtonSlot()
 {
-    //
+    initAbout();
 }
 
 void MainWindow::setStateSlot(QString str)
@@ -476,6 +478,18 @@ void MainWindow::initSetting()
     delete zhSetting;
     zhSetting = NULL;
 }
+
+void MainWindow::initAbout()
+{
+    if(zhabout == NULL){
+        zhabout = new about(this);
+    }
+    zhabout->exec();
+    delete zhabout;
+    zhabout=NULL;
+}
+
+
 
 void MainWindow::saveNetSettingSlot(QVariantMap param)
 {

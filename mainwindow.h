@@ -16,6 +16,7 @@ class KeyFrameWidget;
 class ArmManage;
 class GraphScene;
 class SettingDialog;
+class about;
 
 class QString;
 
@@ -44,7 +45,9 @@ private:
     void initKeyFrameWidget();
     void initArmManage();
     void initSetting();
+    void initAbout();
     void initButtonsState();
+
 
     void closeEvent(QCloseEvent *event);
 
@@ -84,6 +87,7 @@ public:
     KeyFrameWidget* zhKeyFrameWidget;
     ArmManage* zhArmManage;
     SettingDialog* zhSetting;
+    about* zhabout;
 
 private:
     Ui::MainWindow *ui;

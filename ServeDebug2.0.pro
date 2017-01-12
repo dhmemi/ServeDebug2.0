@@ -34,7 +34,8 @@ SOURCES += main.cpp\
     source/settings/settingdialog.cpp \
     source/keyframewidget/keyframewidget.cpp \
     source/keyframewidget/spinboxdelegate.cpp \
-    source/keyframewidget/setenabledialog.cpp
+    source/keyframewidget/setenabledialog.cpp \
+    source/about/about.cpp
 
 HEADERS  += mainwindow.h \
     source/communicate/network/networkdialog.h \
@@ -60,7 +61,8 @@ HEADERS  += mainwindow.h \
     source/settings/settingdialog.h \
     source/keyframewidget/keyframewidget.h \
     source/keyframewidget/spinboxdelegate.h \
-    source/keyframewidget/setenabledialog.h
+    source/keyframewidget/setenabledialog.h \
+    source/about/about.h
 
 FORMS    += mainwindow.ui \
     source/communicate/network/networkdialog.ui \
@@ -70,7 +72,8 @@ FORMS    += mainwindow.ui \
     source/servodebug/analogdata.ui \
     source/logdebug/logdebug.ui \
     source/settings/settingdialog.ui \
-    source/keyframewidget/keyframewidget.ui
+    source/keyframewidget/keyframewidget.ui \
+    source/about/about.ui
 
 RESOURCES += \
     MainWindowImage.qrc \

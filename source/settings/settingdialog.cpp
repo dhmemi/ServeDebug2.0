@@ -26,7 +26,7 @@ void SettingDialog::initPrevious()
     ui->csvPathEdit->setText(currentSetting["csvPath"].toString());
     ui->binPathEdit->setText(currentSetting["binPath"].toString());
     ui->odrPathEdit->setText(currentSetting["odrPath"].toString());
-    ui->netWaitBox->setRange(0,20);
+    ui->netWaitBox->setRange(0,500);
     ui->netWaitBox->setValue(currentSetting["netWait"].toInt());
     ui->modelBox->setCurrentIndex(currentSetting["debugModel"].toInt());
     ui->tabDrcBox->setCurrentIndex(currentSetting["tabDrc"].toInt()-1);
