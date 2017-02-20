@@ -28,6 +28,7 @@ T max(const T1 &a, const T2 &b) {
 
 void GraphScene::setKeyFrameData(int servo, const PointList *points, QString name)
 {
+    PointList tempList = (NULL == points)? PointList() : *points;
     if(name.size() == 0){
         name = "Servo";
     }
@@ -40,22 +41,18 @@ void GraphScene::setKeyFrameData(int servo, const PointList *points, QString nam
         itemMap.insert(servo, pItem);
         this->addItem(pItem);
         rearrange();
-    }
-    pItem = itemMap.value(servo);
-    if (points != NULL)
-    {
-        pItem->setKeyFrames(*points);
+
+        pItem->setKeyFrames(tempList);
         pItem->setDefaultExtent();
-    }
-    else
-    {
-        PointList emptyList;
-        pItem->setInterpFrames(emptyList);
+    }else{
+        pItem = itemMap.value(servo);
+        pItem->setKeyFrames(tempList);
     }
 }
 
 void GraphScene::setInterpFrameData(int servo, const PointList *points)
 {
+    PointList tempList = (NULL == points)? PointList() : *points;
     GraphItem *pItem;
     if (itemMap.contains(servo) == false)
     {
@@ -66,18 +63,12 @@ void GraphScene::setInterpFrameData(int servo, const PointList *points)
         itemMap.insert(servo, pItem);
         this->addItem(pItem);
         rearrange();
-    }
 
-    pItem = itemMap.value(servo);
-    if (points != NULL)
-    {
-        pItem->setInterpFrames(*points);
+        pItem->setInterpFrames(tempList);
         pItem->setDefaultExtent();
-    }
-    else
-    {
-        PointList emptyList;
-        pItem->setInterpFrames(emptyList);
+    }else{
+        pItem = itemMap.value(servo);
+        pItem->setInterpFrames(tempList);
     }
 }
 
@@ -86,11 +77,11 @@ bool GraphScene::isCtrlDown()
     return m_isCtrlDown;
 }
 
-void GraphScene::cb_keyFrameSelected(int time)                        // choose index
+void GraphScene::cb_keyFrameSelected(int index)                        // choose index
 {
     QList<GraphItem*> items = itemMap.values();
-    for (int i=0; i<items.size(); i++) items.at(i)->selectKeyFrameByTime(time);
-    emit keyFrameSelected(time);
+    for (int i=0; i<items.size(); i++) items.at(i)->selectKeyFrame(index);
+    emit keyFrameSelected(index);
 }
 
 void GraphScene::cb_keyFrameMove(int time, int newTime)               // move index

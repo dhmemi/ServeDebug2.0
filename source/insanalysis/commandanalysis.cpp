@@ -374,8 +374,12 @@ void CommandAnalysis::sendControlSlot()
         Ins ins = insDeque.front();
         QByteArray sendData(ins.data);
         sendTimes ++;
-        zhTimeControler->start(paramMap["netWait"].toInt());
         sendInsData(sendData);
+        if(ins.priority == NO_REPLY){
+            emit sendControlSignal();
+        }else{
+            zhTimeControler->start(paramMap["netWait"].toInt());
+        }
     }
     return;
 }
@@ -504,6 +508,7 @@ void CommandAnalysis::downLoadMiniActionSlot(QString fileName)
         BuffSize = paramMap["msgLenth"].toInt();
     }
     int flame = (BuffSize-1+file.size())/BuffSize;
+    qDebug()<<"filesize:"<<file.size()<<"frame:"<<flame<<"buffsize:"<<BuffSize;
     headPack.insert(7, (uchar)(flame/0x100));
     headPack.insert(8, (uchar)(flame%0x100));
     headPack.insert(9, file.fileName().toLatin1().data());
@@ -714,7 +719,7 @@ QByteArray CommandAnalysis::makeCommonDate(uchar command)
 {
     QByteArray data(8, (char)0xFF);
     data[0] = 0xFF;
-    data[1] = (quint8)(localCmdCount%0x100);
+    data[1] = quint8(localCmdCount%0x100);
     data[2] = localHost;
     data[3] = downHost;
     data[4] = 0x00;

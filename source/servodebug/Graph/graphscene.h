@@ -43,7 +43,7 @@ public:
     void selectKeyFrame(int index);
 
 signals:
-    void keyFrameSelected(int time);                        // The first index key frames is selected
+    void keyFrameSelected(int index);                        // The first index key frames is selected
     void keyFrameMove(int time, int newTime);               // The first moment of the index key frames are moved
     void keyFrameModify(int servo, int time, int newData);  // The first index key frames of the location data was changed
     void keyFrameDelete(int time);                          // Delete Keyframe
@@ -60,7 +60,7 @@ private slots:
     void act_keyFrameLoad();
 
     void cb_viewExtentChange(int timeBegin, int timeEnd);
-    void cb_keyFrameSelected(int time);                        // The first index key frames is selected
+    void cb_keyFrameSelected(int index);                        // The first index key frames is selected
     void cb_keyFrameMove(int time, int newTime);               // The first moment of the index key frames are moved
     void cb_keyFrameModify(int servo, int time, int newData);  // The first index key frames of the location data was changed
     void cb_setShowCursor(bool show);

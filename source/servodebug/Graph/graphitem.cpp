@@ -129,7 +129,7 @@ void GraphItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
 
 void GraphItem::cb_keyFrame_selected(int index)
 {
-    pScene->cb_keyFrameSelected(lookupKeyFrameTime(index));
+    pScene->cb_keyFrameSelected(index);
 }
 
 void GraphItem::cb_keyFrame_move(int index, int dt)

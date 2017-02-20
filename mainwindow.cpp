@@ -53,7 +53,7 @@ MainWindow::MainWindow(QWidget *parent) :
     stateLabel = new QLabel(this);
     this->statusBar()->addWidget(stateLabel);
     stateLabel->setText(QObject::tr("Ready!"));
-    setWindowTitle(QObject::tr("ServoDebug 2.0"));
+    setWindowTitle(QObject::tr("ServoDebug %1").arg("2.1.0"));
     this->setWindowIcon(QIcon(":/MainOperator-Image/robot.ico"));
 }
 

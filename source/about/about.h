@@ -1,4 +1,4 @@
-#ifndef ABOUT_H
+﻿#ifndef ABOUT_H
 #define ABOUT_H
 
 #include <QDialog>
@@ -14,6 +14,9 @@ class about : public QDialog
 public:
     explicit about(QWidget *parent = 0);
     ~about();
+
+private slots:
+    void openUrl(const QUrl &url);
 
 private:
     Ui::about *ui;

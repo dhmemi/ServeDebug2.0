@@ -1,4 +1,4 @@
-#include "boundcursoritem.h"
+﻿#include "boundcursoritem.h"
 #include "graphitem.h"
 #include <QPainter>
 #include <QGraphicsItem>
@@ -19,8 +19,8 @@ BoundCursorItem::~BoundCursorItem()
 void BoundCursorItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
     int y = event->pos().y() + pos().y();
-    if (y<0) y = 0;
-    if (y>=m_parent->m_height) y = m_parent->m_height-1;
+    //if (y<0) y = 0;
+    //if (y>=m_parent->m_height) y = m_parent->m_height-1;
 
     this->setY(y);
     m_parent->setYBound(m_ID, m_parent->conv_Display2Point_y(y));

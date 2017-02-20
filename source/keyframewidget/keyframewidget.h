@@ -46,7 +46,7 @@ public slots:
     void ghpMoveSlot(int oldtime, int newtime);
     void ghpModifySlot(int id, int time, int newData);
     void ghpRemoveSlot(int time);
-    void ghpSelected(int time);
+    void ghpSelected(int index);
     void ghpRefreshSlot();
 
 private slots:

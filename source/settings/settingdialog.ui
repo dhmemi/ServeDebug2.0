@@ -330,14 +330,17 @@
     </item>
     <item>
      <widget class="QComboBox" name="tabDrcBox">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <item>
        <property name="text">
-        <string>Horizontal</string>
+        <string>Vertical</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>Vertical</string>
+        <string>Horizontal</string>
        </property>
       </item>
      </widget>

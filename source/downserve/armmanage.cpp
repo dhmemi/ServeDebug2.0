@@ -414,7 +414,7 @@ void ArmManage::downReplyActionSlot(QStringList actions)
 
 void ArmManage::downRefreshActionSlot()
 {
-    downActionTable->clear();
+    downActionTable->clearContents();
     emit downRefreshActionSignal();
 }
 

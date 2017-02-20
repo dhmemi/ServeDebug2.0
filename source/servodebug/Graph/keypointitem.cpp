@@ -21,6 +21,7 @@ KeyPointItem::KeyPointItem(GraphItem *parent, int _frameIndex)
     m_bubble->setParentItem(this);
     m_bubble->setPos(0, 0);
     m_bubble->setVisible(false);
+    this->setZValue(50);
 }
 
 KeyPointItem::~KeyPointItem()
@@ -31,8 +32,8 @@ KeyPointItem::~KeyPointItem()
 void KeyPointItem::updateBubble()
 {
     m_bubble->setStr(QString(QObject::tr(" Time=%1   \n  Position=%2  "))
-                     .arg(pParentItem->conv_Display2Point_x(pos().x())+dragPoint.x())
-                     .arg(pParentItem->conv_Display2Point_y(pos().y())+dragPoint.y()));
+                     .arg(pParentItem->conv_Display2Point_x(pos().x()+dragPoint.x()))
+                     .arg(pParentItem->conv_Display2Point_y(pos().y()+dragPoint.y())));
     m_bubble->setPos(dragPoint);
 }
 
@@ -44,24 +45,30 @@ QVariant KeyPointItem::itemChange(GraphicsItemChange change, const QVariant &val
 
 void KeyPointItem::hoverEnterEvent(QGraphicsSceneHoverEvent *event)
 {
-    event;
     this->mouseOn = true;
+    m_bubble->setVisible(true);
+    pParentItem->m_bubble->setVisible(false);
+    pParentItem->update();
     update();
+    //QGraphicsItem::hoverEnterEvent(event);
 }
 
 void KeyPointItem::hoverLeaveEvent(QGraphicsSceneHoverEvent *event)
 {
-    event;
     this->mouseOn = false;
+    m_bubble->setVisible(false);
+    pParentItem->m_bubble->setVisible(true);
+    pParentItem->update();
     update();
+    //QGraphicsItem::hoverLeaveEvent(event);
 }
 
 void KeyPointItem::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
     this->setSelected(true);
     pParentItem->cb_keyFrame_selected(this->frameIndex);
-    dragged = false;
 
+    dragged = false;
     if (event->modifiers() & Qt::ControlModifier)
         dragMode = MOVE;
     else
@@ -92,10 +99,9 @@ void KeyPointItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 
 void KeyPointItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
 {
-    if (!dragged)
-        m_bubble->setVisible(!m_bubble->isVisible());
-    else
-    {
+    if (!dragged){
+        //m_bubble->setVisible(!m_bubble->isVisible());
+    }else{
         if (dragMode == MOVE)
         {
             pParentItem->cb_keyFrame_move(frameIndex, dragPoint.x());
@@ -112,7 +118,7 @@ void KeyPointItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
     pParentItem->pScene->update();
 
     updateBubble();
-
+    //QGraphicsItem::mouseReleaseEvent(event);
 }
 
 void KeyPointItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
@@ -170,6 +176,6 @@ void KeyPointItem::setFrameIndex(int index)
 void KeyPointItem::setSelected(bool sel)
 {
     this->selected = sel;
-    if (!sel) m_bubble->setVisible(false);
+    //if (!sel) m_bubble->setVisible(false);
     update();
 }

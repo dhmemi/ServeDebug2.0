@@ -546,31 +546,19 @@ void KeyFrameWidget::ghpRemoveSlot(int time)
     emit dataChanged();
 }
 
-void KeyFrameWidget::ghpSelected(int time)
+void KeyFrameWidget::ghpSelected(int index)
 {
     if(Qt::Vertical == orientation){
-        int i;
-        for(i=0; i<keyFrameWidget->rowCount(); i++){
-            if(keyFrameWidget->item(i,0)->data(Qt::DisplayRole).toInt() == time){
-                break;
-            }
-        }
-        if(i<keyFrameWidget->rowCount()){
-            keyFrameWidget->selectRow(i);
+        if(index<keyFrameWidget->rowCount() && index >= 0){
+            keyFrameWidget->selectRow(index);
         }else{
-            groupWarning("cannot find data on keyFrameTable");
+            //groupWarning("cannot find data on keyFrameTable");
         }
     }else if(Qt::Horizontal == orientation){
-        int i;
-        for(i=0; i<keyFrameWidget->columnCount(); i++){
-            if(keyFrameWidget->item(0,i)->data(Qt::DisplayRole).toInt() == time){
-                break;
-            }
-        }
-        if(i<keyFrameWidget->columnCount()){
-            keyFrameWidget->selectColumn(i);
+        if(index<keyFrameWidget->columnCount() && index >= 0){
+            keyFrameWidget->selectColumn(index);
         }else{
-            groupWarning("cannot find data on keyFrameTable");
+            //groupWarning("cannot find data on keyFrameTable");
         }
     }
 }

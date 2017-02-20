@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>MainOperator-Image/green.jpg</file>
-        <file>MainOperator-Image/gyration.jpg</file>
         <file>MainOperator-Image/new.png</file>
         <file>MainOperator-Image/red.jpg</file>
         <file>MainOperator-Image/left.png</file>
