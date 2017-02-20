@@ -12,6 +12,7 @@
 #include "source/settings/settingdialog.h"
 #include "source/globaldefine/upDefine.h"
 #include "source/about/about.h"
+#include "version.h"
 
 #include <QToolBar>
 #include <QToolButton>
@@ -53,7 +54,7 @@ MainWindow::MainWindow(QWidget *parent) :
     stateLabel = new QLabel(this);
     this->statusBar()->addWidget(stateLabel);
     stateLabel->setText(QObject::tr("Ready!"));
-    setWindowTitle(QObject::tr("ServoDebug %1").arg("2.1.0"));
+    setWindowTitle(QObject::tr("ServoDebug %1").arg(PRODUCT_VERSION_STR));
     this->setWindowIcon(QIcon(":/MainOperator-Image/robot.ico"));
 }
 
@@ -109,7 +110,7 @@ void MainWindow::initToolBar()
     settingButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
     aboutButton = new QToolButton(this);
-    aboutButton->setIcon(QIcon(":/MainOperator-Image/exit.ico"));
+    aboutButton->setIcon(QIcon(":/MainOperator-Image/about.png"));
     aboutButton->setText("关于");
     aboutButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 

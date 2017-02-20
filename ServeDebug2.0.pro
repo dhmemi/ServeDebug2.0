@@ -62,7 +62,8 @@ HEADERS  += mainwindow.h \
     source/keyframewidget/keyframewidget.h \
     source/keyframewidget/spinboxdelegate.h \
     source/keyframewidget/setenabledialog.h \
-    source/about/about.h
+    source/about/about.h \
+    version.h
 
 FORMS    += mainwindow.ui \
     source/communicate/network/networkdialog.ui \
@@ -80,3 +81,8 @@ RESOURCES += \
     documentImage.qrc
 
 CONFIG += static
+
+RC_FILE += servodebug.rc
+
+DISTFILES += \
+    servodebug.rc

@@ -10,7 +10,6 @@
         <file>MainOperator-Image/network.ico</file>
         <file>MainOperator-Image/serialCom.ico</file>
         <file>MainOperator-Image/servo.ico</file>
-        <file>MainOperator-Image/exit.ico</file>
         <file>MainOperator-Image/robot.ico</file>
         <file>MainOperator-Image/downward.png</file>
         <file>MainOperator-Image/leftward.png</file>
@@ -19,5 +18,6 @@
         <file>MainOperator-Image/down.png</file>
         <file>MainOperator-Image/up.png</file>
         <file>MainOperator-Image/setting.png</file>
+        <file>MainOperator-Image/about.png</file>
     </qresource>
 </RCC>
