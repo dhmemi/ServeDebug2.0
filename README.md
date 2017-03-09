@@ -1,5 +1,5 @@
 # ServeDebug2.0
-#About ServoDebug
+##About ServoDebug
   Servo debug and action editor for NWPU dancing robots. Potentially,it can be used on any robot or other machine
 which consists of servo.
 
@@ -7,5 +7,5 @@ which consists of servo.
 it can do nothing but edit dococument with the special format.If you are intrested with it or have
 any problem, please contact me.
 
-#How to Build
-build with Qt5, only tested on Windows.
+##How to Build
+  Build with Qt5, only tested on Windows.
