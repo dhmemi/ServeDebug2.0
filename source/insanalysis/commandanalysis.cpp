@@ -219,7 +219,7 @@ void CommandAnalysis::replyServoConnection(QByteArray data)
 
 void CommandAnalysis::replyServoPosition(QByteArray data)
 {
-    if((data.size()-8)%3!=0 || data.at(8) != (data.size()-8)/3)
+    if((data.size()-10)%3!=0 || data.at(8) != (data.size()-10)/3)
     {
         groupWarning(QObject::tr("reply current servo position error!"));
         return;
@@ -235,11 +235,9 @@ void CommandAnalysis::replyServoPosition(QByteArray data)
     }
     for(int i = 0; i < servoNumber; i++)
     {
-        for(int j=0; j<servoInfoMap.size(); j++){
-            if(servoInfoMap.contains((int)data.at(9+i*3))){
-                servoInfoMap[(int)data.at(9+i*3)].currentPos = data.at(i*3+10)*256 + data.at(i*3+11);
-                break;
-            }
+        if(servoInfoMap.contains(uchar(data.at(9+i*3)))){
+            servoInfoMap[uchar(data.at(9+i*3))].currentPos =
+                    uchar(data.at(i*3+10))*256 + uchar(data.at(i*3+11));
         }
     }
     emit servoPosChangedSignal(servoInfoMap);
@@ -405,7 +403,7 @@ void CommandAnalysis::sendInsData(QByteArray data)
         groupWarning(QObject::tr("Disconnected!"));
         return;
     }
-    emit sendCmdChangedSignal(cmdMap[(int)data.at(6)]);
+    emit sendCmdChangedSignal(cmdMap[uchar(data.at(6))]);
     emit sendInsStateSignal(data);
 }
 

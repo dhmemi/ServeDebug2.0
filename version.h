@@ -2,10 +2,10 @@
 #define VERSION_H
 
 #define PRODUCT_ICON           "/MainOperator-Image/robot.ico" // 图标
-#define FILE_VERSION           2,1,0   // 文件版本
-#define FILE_VERSION_STR       "2.1.0"
-#define PRODUCT_VERSION        2,1,0   // 产品版本
-#define PRODUCT_VERSION_STR    "2.1.0"
+#define FILE_VERSION           2,1,2   // 文件版本
+#define FILE_VERSION_STR       "2.1.2"
+#define PRODUCT_VERSION        2,1,2      // 产品版本
+#define PRODUCT_VERSION_STR    "2.1.2"
 #define COMPANY_NAME           "NUP-CollegeDancingRobotResearch&TraniningBase"
 #define INTERNAL_NAME          "ServoDebug.exe"
 #define FILE_DESCRIPTION        "多关节机器人舵机动作编辑调试软件"  // 文件说明

@@ -704,7 +704,7 @@ void KeyFrameWidget::initSence()
     connect(keyFrameWidget,&QTableWidget::itemChanged,this,&KeyFrameWidget::onkeyFrameDataChanged);
     connect(sliderWidget,&QTableWidget::customContextMenuRequested,this,&KeyFrameWidget::onCustomContextRequest_2);
     connect(sliderWidget,&QTableWidget::itemChanged,this,&KeyFrameWidget::onSliderWidgetchanged);
-    connect(getdownPos,&QAction::triggered,this,&KeyFrameWidget::getDownPosSignal);
+    connect(getdownPos,&QAction::triggered,this,&KeyFrameWidget::getDownPosActionSlot);
     connect(insertButton,&QPushButton::clicked,this,&KeyFrameWidget::onInsertButtonClicked);
     connect(removeAction, &QAction::triggered, this, &KeyFrameWidget::removeFrameSlot);
     connect(gotoAction, &QAction::triggered, this, &KeyFrameWidget::gotoFrameActionSlot);
