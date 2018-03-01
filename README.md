@@ -1,4 +1,4 @@
-# ServeDebug2.0
+# ServoDebug2.0
 ## About ServoDebug
   Servo debug and action editor for NWPU dancing robots. Potentially,it can be used on any robot or other machine
 which consists of servo.
